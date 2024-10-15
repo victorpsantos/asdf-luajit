@@ -169,7 +169,7 @@ get_luaJIT_download_url() {
 get_lua_rocks_download_url() {
   local install_type=$1
   local version=$2
-  echo "http://luarocks.github.io/luarocks/releases/luarocks-${version}.tar.gz"
+  echo "https://github.com/luarocks/luarocks/archive/refs/tags/${version}.tar.gz"
 }
 
 install_luaJIT $ASDF_INSTALL_TYPE $ASDF_INSTALL_VERSION $ASDF_INSTALL_PATH
