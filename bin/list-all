@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
 
 versions_list=(
-  v2.0.ROLLING
-  v2.1.ROLLING
+  v2.0.ROLLING--v3.11.1
+  v2.0.ROLLING--v3.11.0
+  v2.0.ROLLING--v3.10.0
+  v2.1.ROLLING--v3.11.1
+  v2.1.ROLLING--v3.11.0
+  v2.1.ROLLING--v3.10.0
 )
 
 versions=""
