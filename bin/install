@@ -22,7 +22,7 @@ install_luaJIT() {
   # because we don't want to disturb current working dir
   (
     cd $(dirname $luaJIT_source_path)
-    tar zxf $luaJIT_source_path || exit 1
+    tar --transform="s/^LuaJIT-.*/LuaJIT-$luaJIT_version/" zxf $luaJIT_source_path || exit 1
     cd $(untar_luaJIT_path $install_type $luaJIT_version $tmp_download_dir)
 
     local luaJIT_configure_options="$(construct_luaJIT_configure_options)"
