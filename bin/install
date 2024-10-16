@@ -53,7 +53,7 @@ install_luaJIT() {
     unset ASDF_PKG_MISSING
 
     echo "Building luarocks with options: $lua_rocks_configure_options"
-    ./configure --with-lua=$install_path $lua_rocks_configure_options || exit 1
+    ./configure --with-lua=$(asdf where lua) $lua_rocks_configure_options || exit 1
     make build || exit 1
     make install || exit 1
   )
